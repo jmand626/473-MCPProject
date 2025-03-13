@@ -262,29 +262,6 @@ def save_results(results):
         report += f"| {result['id']} | {result['category']} | {result['query']} | {nasa_data} | {urls} |\n"
     
     report += """
-## Content Analysis
-
-The integration with NASA APIs provides several advantages:
-
-1. **Real-time Data**: The integration provides up-to-date information from NASA sources.
-2. **Specific Details**: Responses with NASA data contain more specific details like dates, titles, and URLs.
-3. **Visual References**: Many responses include links to images or visual data.
-4. **Factual Accuracy**: The data comes directly from NASA, increasing the factual accuracy.
-
-## Limitations
-
-Some limitations observed during testing:
-
-1. **Limited Scope**: The integration only helps with specific NASA-related queries.
-2. **Context Understanding**: Some ambiguous queries may not trigger the appropriate NASA API.
-3. **Content Integration**: The model sometimes struggles to seamlessly integrate NASA data with its own knowledge.
-
-## Conclusion
-
-The NASA API integration significantly enhances responses to space-related queries by providing specific, 
-up-to-date information directly from NASA sources. This demonstrates the value of the Model Context Protocol
-for expanding the capabilities of language models.
-"""
     
     # Save markdown report
     with open('nasa_integration_test_report.md', 'w') as f:
